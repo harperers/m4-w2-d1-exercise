@@ -75,9 +75,9 @@ user: req.user });
     res.redirect('/');
   });
 
-  app.post('/logout',
+  app.get('/logout',
   function(req, res) {
-    res.logout();
+    req.logout();
     res.redirect('/');
   });
 
